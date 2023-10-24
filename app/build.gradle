@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace 'css.cis3334.project'
+    namespace 'css.chem.project'
     compileSdk 34
 
     defaultConfig {
-        applicationId "css.cis3334.project"
+        applicationId "css.chem.project"
         minSdk 28
         targetSdk 34
         versionCode 1

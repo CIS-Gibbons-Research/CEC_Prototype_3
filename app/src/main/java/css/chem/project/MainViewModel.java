@@ -1,4 +1,4 @@
-package css.cis3334.project;
+package css.chem.project;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;

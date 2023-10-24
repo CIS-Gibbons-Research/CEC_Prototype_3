@@ -1,4 +1,4 @@
-package css.cis3334.project;
+package css.chem.project;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,23 +10,25 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import css.cis3334.project.databinding.FragmentHomeBinding;
+import css.chem.project.databinding.FragmentAnalyzeBinding;
 
-public class FragmentHome extends Fragment {
+public class FragmentAnalyze extends Fragment {
 
-    private FragmentHomeBinding binding;
+    private FragmentAnalyzeBinding binding;
     private MainViewModel viewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        //HomeViewModel homeViewModel = new ViewModelProvider(this).get(HomeViewModel.class);
+        //NotificationsViewModel notificationsViewModel =  new ViewModelProvider(this).get(NotificationsViewModel.class);
         // Use the shared ViewModel
         viewModel = new ViewModelProvider(requireActivity()).get(MainViewModel.class);
+        // Set the text in the shared ViewModel. This should appear in the other fragments.
+        viewModel.setText("Notification Set !!!");
 
-        binding = FragmentHomeBinding.inflate(inflater, container, false);
+        binding = FragmentAnalyzeBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textHome;
+        final TextView textView = binding.textNotifications;
         viewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }

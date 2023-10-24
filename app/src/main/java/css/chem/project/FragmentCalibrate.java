@@ -1,4 +1,4 @@
-package css.cis3334.project;
+package css.chem.project;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -12,11 +12,11 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import css.cis3334.project.databinding.FragmentDashboardBinding;
+import css.chem.project.databinding.FragmentCalibrateBinding;
 
-public class FragmentDashboard extends Fragment {
+public class FragmentCalibrate extends Fragment {
 
-    private FragmentDashboardBinding binding;
+    private FragmentCalibrateBinding binding;
     private MainViewModel viewModel;
     Button buttonUpdateOrder;
 
@@ -26,7 +26,7 @@ public class FragmentDashboard extends Fragment {
         // Use the shared ViewModel
         viewModel = new ViewModelProvider(requireActivity()).get(MainViewModel.class);
 
-        binding = FragmentDashboardBinding.inflate(inflater, container, false);
+        binding = FragmentCalibrateBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
         final TextView textView = binding.textDashboard;
