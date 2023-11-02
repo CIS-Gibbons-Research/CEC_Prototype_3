@@ -13,5 +13,6 @@
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
         <item name="color3">@color/material_on_primary_emphasis_medium</item>
+        <color name="purple_100">#D622FF</color>
     </style>
 </resources>
